@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list" id="navList">
+            <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="prices.html">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <h1 class="hero__title">FixIT Center</h1>
+        <p class="hero__subtitle">Авторизованный сервисный центр</p>
+        <button class="hero__button" id="modalOpen">Оставить заявку</button>
+    </section>
+
+    <section class="partners">
+        <h2 class="partners__title">Наши партнёры</h2>
+        <p class="partners__subtitle">
+            Мы сотрудничаем с производителями и брендами, которые поддерживают ремонт и обслуживание устройств
+        </p>
+
+        <ul class="partners__list">
+            <li class="partners__item"><img src="assets/partners/google.png" alt="Google" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/valve.png" alt="Valve" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/lenovo.png" alt="Lenovo" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/microsoft.png" alt="Microsoft" class="partners__logo"></li>
+
+            <li class="partners__item"><img src="assets/partners/motorola.png" alt="Motorola" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/hp.png" alt="HP" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/polaroid-transparent.png" alt="Polaroid" class="partners__logo"></li>
+            <li class="partners__item"><img src="assets/partners/patagonia.png" alt="Patagonia" class="partners__logo"></li>
+        </ul>
+    </section>
+
+    <section class="features">
+        <h2 class="features__title">Почему выбирают нас</h2>
+        <div class = "feature__list">
+            <div class = "feature__item">Быстрая диагностика</div>
+            <div class = "feature__item">Гарантия на все работы</div>
+            <div class="feature__item">Оригинальные комплектующие</div>
+            <div class="feature__item">Опытные специалисты</div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col">
+            <h3 class="footer__logo">FixIT Center</h3>
+            <p class="footer__desc">
+                Профессиональный ремонт цифровой техники.
+                Качественные запчасти, гарантия на работы и опытные мастера.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__icon">📍</span>
+                    г. Ростов-на-Дону, ул. Пушкинская, 10
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">📞</span>
+                    <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">✉️</span>
+                    <a href="mailto:support@fixit.ru" class="footer__link">support@fixit.ru</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="social-btn social-btn--vk" aria-label="VK">VK</a>
+                <a href="#" class="social-btn social-btn--tg" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn social-btn--wa" aria-label="WhatsApp">WA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 FixIT Center. Все права защищены.</p>
+    </div>
+</footer>
+
+<div class="modal">
+    <div class="modal__content">
+        <button class="modal__close" id="modalClose">&times;</button>
+        <h2 class="modal__title">Заявка на ремонт</h2>
+
+        <form class="form request-form modal__form" id="requestForm">
+            <label class="form__label" for="requestName">Имя</label>
+            <input class="form__input" type="text" id="requestName" name="name" placeholder="Имя" required>
+
+            <label class="form__label" for="requestPhone">Телефон</label>
+            <input class="form__input" type="tel" id="requestPhone" name="phone" placeholder="+7 ___ ___ ____" required>
+
+            <label class="form__label" for="requestDevice">Устройство</label>
+            <select class="form__select" id="requestDevice" name="device" required>
+                <option value="">Выберите устройство</option>
+                <option value="laptop">Ноутбук</option>
+                <option value="smartphone">Смартфон</option>
+                <option value="pc">ПК</option>
+                <option value="tablet">Планшет</option>
+                <option value="other">Другое</option>
+            </select>
+
+            <label class="form__label" for="requestProblem">Описание проблемы</label>
+            <textarea class="form__textarea" id="requestProblem" name="problem" placeholder="Опишите проблему" required></textarea>
+
+            <button class="form__button" type="submit">Отправить</button>
+        </form>
+
+        <p class="modal__status" id="modalStatus"></p>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

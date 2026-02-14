@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - FixIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list" id="navList">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="prices.html">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="contacts-page">
+        <div class="contacts-container">
+            <div class="contacts-info">
+                <h1 class="contacts__title">Наши контакты</h1>
+                <p class="contacts__subtitle">
+                    Мы находимся в центре города. Приходите на бесплатную диагностику или вызовите курьера.
+                </p>
+
+                <ul class="contacts-details">
+                    <li class="contacts-details__item">
+                        <span class="contacts-details__icon">📍</span>
+                        <div>
+                            <span class="contacts-details__label">Адрес:</span>
+                            <p>г. Ростов-на-Дону, ул. Пушкинская, 10</p>
+                        </div>
+                    </li>
+                    <li class="contacts-details__item">
+                        <span class="contacts-details__icon">📞</span>
+                        <div>
+                            <span class="contacts-details__label">Телефон:</span>
+                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                        </div>
+                    </li>
+                    <li class="contacts-details__item">
+                        <span class="contacts-details__icon">⏰</span>
+                        <div>
+                            <span class="contacts-details__label">Режим работы:</span>
+                            <p>Ежедневно с 10:00 до 20:00</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="map-wrapper">
+                    <iframe
+                            class="map__frame"
+                            src="https://yandex.ru/map-widget/v1/-/CLdiQYYq"
+                            width="100%"
+                            height="250"
+                            frameborder="0"
+                            allowfullscreen
+                            allow="geolocation">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contacts-form-wrapper">
+                <div class="form-card">
+                    <h2 class="form-card__title">Заявка на ремонт</h2>
+                    <p class="form-card__subtitle">Заполните форму, и мастер перезвонит вам в течение 15 минут.</p>
+
+                    <form class="form request-form contacts__form-reset" id="requestForm">
+                        <label class="form__label" for="requestName">Ваше имя</label>
+                        <input class="form__input" type="text" id="requestName" name="name" placeholder="Иван" required>
+
+                        <label class="form__label" for="requestPhone">Телефон</label>
+                        <input class="form__input" type="tel" id="requestPhone" name="phone" placeholder="+7 (999) 000-00-00" required>
+
+                        <label class="form__label" for="requestDevice">Тип устройства</label>
+                        <select class="form__select" id="requestDevice" name="device" required>
+                            <option value="">Выберите из списка</option>
+                            <option value="laptop">Ноутбук</option>
+                            <option value="smartphone">Смартфон</option>
+                            <option value="pc">ПК</option>
+                            <option value="tablet">Планшет</option>
+                            <option value="other">Другое</option>
+                        </select>
+
+                        <label class="form__label" for="requestProblem">Что случилось?</label>
+                        <textarea class="form__textarea" id="requestProblem" name="problem" placeholder="Например: разбился экран..."></textarea>
+
+                        <button class="form__button" type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col">
+            <h3 class="footer__logo">FixIT Center</h3>
+            <p class="footer__desc">
+                Профессиональный ремонт цифровой техники.
+                Качественные запчасти, гарантия на работы и опытные мастера.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__icon">📍</span>
+                    г. Ростов-на-Дону, ул. Пушкинская, 10
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">📞</span>
+                    <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">✉️</span>
+                   <a href="mailto:support@fixit.ru" class="footer__link">support@fixit.ru</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="social-btn social-btn--vk" aria-label="VK">VK</a>
+                <a href="#" class="social-btn social-btn--tg" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn social-btn--wa" aria-label="WhatsApp">WA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 FixIT Center. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

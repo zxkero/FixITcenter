@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены — FixIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list" id="navList">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="prices.html">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+<main class="main">
+    <section class="prices">
+        <h2 class="prices__title">Стоимость услуг</h2>
+
+        <div class="prices__wrapper">
+            <table class="prices__table">
+                <thead>
+                <tr>
+                    <th scope="col">Услуга</th>
+                    <th scope="col">Описание</th>
+                    <th scope="col">Цена (₽)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="prices__row--category">
+                    <th colspan="3" scope="colgroup">Ноутбуки</th>
+                </tr>
+                <tr><td>Диагностика</td><td>Проверка устройства</td><td>0</td></tr>
+                <tr><td>Замена экрана</td><td>Дисплей + тест</td><td>7 000 - 13 000</td></tr>
+                <tr><td>Чистка охлаждения</td><td>Пыль + термопаста</td><td>2 000 - 3 200</td></tr>
+                <tr><td>Замена клавиатуры</td><td>Модуль/клавиши</td><td>2 500 - 5 000</td></tr>
+                <tr><td>Апгрейд ОЗУ</td><td>Расширение RAM</td><td>1 600 + модуль</td></tr>
+
+                <tr class="prices__row--category">
+                    <th colspan="3" scope="colgroup">Смартфоны</th>
+                </tr>
+                <tr><td>Диагностика</td><td>Проверка компонентов</td><td>0</td></tr>
+                <tr><td>Замена дисплея</td><td>Экран + сенсор</td><td>3 500 - 10 500</td></tr>
+                <tr><td>Замена аккумулятора</td><td>Новая АКБ</td><td>2 600 - 5 200</td></tr>
+                <tr><td>Зарядный порт</td><td>USB разъём</td><td>3 000 - 4 800</td></tr>
+                <tr><td>Динамик</td><td>Разговорный/медиа</td><td>1 700 - 3 900</td></tr>
+
+                <tr class="prices__row--category">
+                    <th colspan="3" scope="colgroup">ПК</th>
+                </tr>
+                <tr><td>Диагностика</td><td>Проверка компонентов</td><td>0</td></tr>
+                <tr><td>Чистка от пыли</td><td>Корпус + БП</td><td>1 700 - 3 000</td></tr>
+                <tr><td>Замена комплектующих</td><td>CPU/GPU/БП</td><td>1 300 - 4 500 + деталь</td></tr>
+                <tr><td>Установка ОС</td><td>Драйверы включены</td><td>2 100 - 4 000</td></tr>
+
+                <tr class="prices__row--category">
+                    <th colspan="3" scope="colgroup">Другое</th>
+                </tr>
+                <tr><td>Диагностика</td><td>Общая диагностика</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col">
+            <h3 class="footer__logo">FixIT Center</h3>
+            <p class="footer__desc">
+                Профессиональный ремонт цифровой техники.
+                Качественные запчасти, гарантия на работы и опытные мастера.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__icon">📍</span>
+                    г. Ростов-на-Дону, ул. Пушкинская, 10
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">📞</span>
+                    <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">✉️</span>
+                    <a href="mailto:support@fixit.ru" class="footer__link">support@fixit.ru</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="social-btn social-btn--vk" aria-label="VK">VK</a>
+                <a href="#" class="social-btn social-btn--tg" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn social-btn--wa" aria-label="WhatsApp">WA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 FixIT Center. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

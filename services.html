@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги — FixIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list" id="navList">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="prices.html">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="services">
+        <h2 class="services__title">Наши услуги</h2>
+        <ul class="services__list">
+            <li class="services__card">
+                <img src="assets/icons/laptop.png" alt="Ремонт ноутбуков" class="services__icon">
+                <h3 class="services__card-title">Ремонт ноутбуков</h3>
+                <p class="services__card-text">Замена экрана, клавиатуры, чистка системы охлаждения, апгрейд ОЗУ и накопителей</p>
+            </li>
+
+            <li class="services__card">
+                <img src="assets/icons/smartphone.png" alt="Ремонт смартфонов" class="services__icon">
+                <h3 class="services__card-title">Ремонт смартфонов</h3>
+                <p class="services__card-text">Замена дисплея и сенсора, аккумулятора, динамиков, микрофона и разъёмов питания</p>
+            </li>
+
+            <li class="services__card">
+                <img src="assets/icons/diagnostic.png" alt="Диагностика устройств" class="services__icon">
+                <h3 class="services__card-title">Диагностика устройств</h3>
+                <p class="services__card-text">Аппаратная и программная проверка, тестирование компонентов и выявление неисправностей</p>
+            </li>
+
+            <li class="services__card">
+                <img src="assets/icons/pc.png" alt="Сборка ПК" class="services__icon">
+                <h3 class="services__card-title">Сборка и модернизация ПК</h3>
+                <p class="services__card-text">Сборка систем под задачи клиента, апгрейд CPU/GPU, замена блока питания, настройка BIOS</p>
+            </li>
+
+            <li class="services__card">
+                <img src="assets/icons/cms.png" alt="Установка и настройка ПО" class="services__icon">
+                <h3 class="services__card-title">Установка и настройка ПО</h3>
+                <p class="services__card-text">Установка ОС Windows/Linux, драйверов, офисных пакетов, антивирусов и базовая оптимизация</p>
+            </li>
+
+            <li class="services__card">
+                <img src="assets/icons/data.png" alt="Восстановление данных" class="services__icon">
+                <h3 class="services__card-title">Восстановление данных</h3>
+                <p class="services__card-text">Извлечение и восстановление информации с HDD, SSD, телефонов и USB-накопителей</p>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col">
+            <h3 class="footer__logo">FixIT Center</h3>
+            <p class="footer__desc">
+                Профессиональный ремонт цифровой техники.
+                Качественные запчасти, гарантия на работы и опытные мастера.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__icon">📍</span>
+                    г. Ростов-на-Дону, ул. Пушкинская, 10
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">📞</span>
+                    <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">✉️</span>
+                    <a href="mailto:support@fixit.ru" class="footer__link">support@fixit.ru</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="social-btn social-btn--vk" aria-label="VK">VK</a>
+                <a href="#" class="social-btn social-btn--tg" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn social-btn--wa" aria-label="WhatsApp">WA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 FixIT Center. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

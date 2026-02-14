@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - FixIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list" id="navList">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="prices.html">Цены</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active" href="about.html">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="about-hero">
+        <div class="about-hero__content">
+            <h1 class="about__title">О FixIT Center</h1>
+            <p class="about__lead">
+                Мы возвращаем технику к жизни с 2018 года. Наша миссия — сделать ремонт простым, прозрачным и доступным для каждого.
+            </p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats__item">
+            <span class="stats__number">5+</span>
+            <span class="stats__label">Лет опыта</span>
+        </div>
+        <div class="stats__item">
+            <span class="stats__number">3000+</span>
+            <span class="stats__label">Отремонтированных устройств</span>
+        </div>
+        <div class="stats__item">
+            <span class="stats__number">12</span>
+            <span class="stats__label">Месяцев гарантии</span>
+        </div>
+    </section>
+
+    <section class="story">
+        <div class="story__content">
+            <h2 class="story__title">Наш подход к работе</h2>
+            <p class="story__text">
+                FixIT Center начинался как небольшая мастерская в гараже, а сегодня это полноценный сервисный центр с профессиональным оборудованием.
+            </p>
+            <p class="story__text">
+                Мы не просто меняем детали — мы проводим глубокую диагностику, чтобы устранить первопричину поломки. Мы верим, что честность — лучшая стратегия, поэтому никогда не навязываем ненужных услуг.
+            </p>
+        </div>
+        <div class="story__image-wrapper">
+            <img src="assets/images/repair1.jpg" alt="Мастер за работой" class="story__image">
+        </div>
+    </section>
+
+    <section class="values">
+        <h2 class="values__title">Наши ценности</h2>
+        <div class="values__grid">
+            <div class="value-card">
+                <img src="assets/icons/flash.png" alt="Молния" class="values__icon">
+                <h3 class="value-card__title">Скорость</h3>
+                <p>90% ремонтов выполняем в день обращения. Мы ценим ваше время.</p>
+            </div>
+            <div class="value-card">
+                <img src="assets/icons/shield.png" alt="Щит" class="values__icon">
+                <h3 class="value-card__title">Гарантия</h3>
+                <p>Используем только оригинальные запчасти и даем реальную гарантию.</p>
+            </div>
+            <div class="value-card">
+                <img src="assets/icons/handshake.png" alt="Рукопожатие" class="values__icon">
+                <h3 class="value-card__title">Честность</h3>
+                <p>Фиксированные цены. Никаких скрытых доплат после ремонта.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-block">
+        <h2 class="cta-block__title">Готовы починить ваше устройство?</h2>
+        <p class="cta-block__subtitle">Оставьте заявку, и мы свяжемся с вами в течение 15 минут</p>
+        <a href="contacts.html" class="hero__button">Связаться с нами</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col">
+            <h3 class="footer__logo">FixIT Center</h3>
+            <p class="footer__desc">
+                Профессиональный ремонт цифровой техники.
+                Качественные запчасти, гарантия на работы и опытные мастера.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__icon">📍</span>
+                    г. Ростов-на-Дону, ул. Пушкинская, 10
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">📞</span>
+                    <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__icon">✉️</span>
+                    <a href="mailto:support@fixit.ru" class="footer__link">support@fixit.ru</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="#" class="social-btn social-btn--vk" aria-label="VK">VK</a>
+                <a href="#" class="social-btn social-btn--tg" aria-label="Telegram">TG</a>
+                <a href="#" class="social-btn social-btn--wa" aria-label="WhatsApp">WA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 FixIT Center. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
